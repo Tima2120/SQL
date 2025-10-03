@@ -1,30 +1,17 @@
 # SQL
 My SQL Project 
 
-SELECT
-    Category,
-    COUNT(DISTINCT Order_ID) AS total_orders,         
-    SUM(Units_Sold) AS total_units_sold,              
-    Round(SUM(Revenue),2 ) AS total_revenue,                    
-    Round(SUM(Profit),2 ) AS total_profit,                     
-    ROUND(AVG(Unit_Price), 2) AS avg_price,           
-    ROUND(AVG(Discount), 2) AS avg_discount,          
-    ROUND(AVG(Customer_Age), 1) AS avg_customer_age   
-FROM `dac5bigquery-470119.Adidas.Adidas_sales`
-GROUP BY Category
-ORDER BY total_revenue DESC; 
+# Adidas Sales Analysis
 
+## Tools
+- Google BigQuery
+- SQL
+- Excel
 
-SELECT 
-CASE
-        WHEN Store_Type = 'Online' THEN 'Online' 
-        WHEN Store_Type IN ('Retail', 'Outlet', 'Wholesale') THEN 'Physical (Offline)'
-        ELSE 'Other' 
-    END AS Channel_Type,
-    Round(SUM(Revenue),2 ) AS Total_Revenue,
-     Round((SUM(Revenue) * 100.0 / SUM(SUM(Revenue)) OVER ()),0) AS Percentage_of_Total_Revenue FROM `dac5bigquery-470119.Adidas.Adidas_sales` 
-GROUP BY
-    Channel_Type 
+## Key Results
+- Online sales: 46% of revenue ($133,207)
+- Footwear: 62.2% revenue share ($179,006) 
+- Physical stores: 54% revenue ($154,171)
 
-ORDER BY
-    Total_Revenue DESC
+## SQL Queries
+See [sql_queries.sql](https://console.cloud.google.com/bigquery?ws=!1m7!1m6!12m5!1m3!1sdac5bigquery-470119!2sus-central1!3s78cc40f4-c968-45b1-a975-73a56f841f4a!2e1)
