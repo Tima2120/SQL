@@ -15,4 +15,4 @@ My SQL Project
 
 ## SQL Queries
 See [SQL](https://console.cloud.google.com/bigquery?ws=!1m7!1m6!12m5!1m3!1sdac5bigquery-470119!2sus-central1!3s78cc40f4-c968-45b1-a975-73a56f841f4a!2e1)
-See [Excel](https://docs.google.com/spreadsheets/d/1RqcLhG5q8Ih5LYKoQ8YUBxnSCfP7-4Jx4F3Zoc-2PTg/edit?usp=sharing)
+See [Excel Dashboard](https://docs.google.com/spreadsheets/d/1bPSAfDToYr6kPYy-JP-XaFQtsi2gwK5gA-U3r0040U8/edit?usp=sharing)
